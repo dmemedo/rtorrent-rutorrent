@@ -3,7 +3,7 @@ USER root
 
 # mediainfo and php-geoip left out
 RUN apk add --no-cache rtorrent unzip unrar curl php-fpm php-cli php-json nginx wget ffmpeg supervisor git && \
-    git clone -b alpine https://github.com/diameter/rtorrent-rutorrent-shared.git a && \
+    git clone -b alpine https://github.com/dmemedo/rtorrent-rutorrent-shared.git a && \
     mkdir -p /var/www && \
     wget --no-check-certificate https://bintray.com/artifact/download/novik65/generic/ruTorrent-3.7.zip && \
     unzip ruTorrent-3.7.zip && \
